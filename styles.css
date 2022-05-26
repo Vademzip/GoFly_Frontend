@@ -150,6 +150,7 @@ body{
     border: 3px solid #10FFFF;
     border-radius: 25px;
     height: 150px;
+    transition: 1s;
     
 }
 
@@ -199,6 +200,11 @@ body{
     opacity: 60%;
 }
 
+.trains .imgBorder:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
 .trains img{
     position: relative;
     max-width: 50%;
@@ -233,6 +239,11 @@ body{
     opacity: 60%;
 }
 
+.buses .imgBorder:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
 .buses p{
     text-align: center;
 }
@@ -260,6 +271,11 @@ body{
     opacity: 60%;
 }
 
+.hotels .imgBorder:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
 .hotels p{
     text-align: center;
 }
@@ -284,6 +300,11 @@ body{
     opacity: 60%;
 }
 
+.topHotels .imgBorder:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
 .topHotels p{
     text-align: center;
 }
@@ -306,6 +327,11 @@ body{
 
 .topCities .imgBorder{
     opacity: 60%;
+}
+
+.topCities .imgBorder:hover{
+    opacity: 100%;
+    cursor: pointer;
 }
 
 .topCities p{
