@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoFly - поиск дешёвых билетов
+    </title>
+</head>
+<body>
+   
+    <div class="toppanel">
+        <span id="Logo">GoFly</span>
+        <a href="" id="Favorites">Избранное</a>
+        <a href="" id="History">История путешествий</a>
+        <a href="" id="Registration">Зарегестрироваться</a>
+        <a href="" id="Login">Войти</a>
+    </div>
+
+    <div class="buttons">
+
+        <div class="planes">
+            <div class="imgBorder">
+                <img src="images/planes.png" alt="">
+            </div>
+            <p>Авиабилеты</p>
+        </div>
+        
+        <div class="trains">
+            <div class="imgBorder">
+            <img src="images/train.png" alt="">
+            </div>
+            <p>Ж/Д билеты</p>
+        </div>
+
+
+        <div class="buses">
+            <div class="imgBorder">
+                <img src="images/bus.png" alt="">
+            </div>
+                <p>Автобусы</p>
+        </div>
+
+        <div class="hotels">
+            <div class="imgBorder">
+                <img src="images/hotel.png" alt="">
+            </div>
+                <p>Отели</p>
+        </div>
+        <div class="topCities">
+            <div class="imgBorder">
+                <img src="images/topCities.png" alt="">
+            </div>
+                <p>Топ городов</p>
+        </div>
+        <div class="topHotels">
+            <div class="imgBorder">
+                <img src="images/hotel (2).png" alt="">
+            </div>
+            <p>Топ отелей</p>
+        </div>
+        
+    </div>
+
+<div class="searchPannel">
+    <input type="search" name="Departure" id="Departure" placeholder="Откуда" list="">
+    <input type="search" name="Arrival" id="Arrival" placeholder="Куда">
+    <!-- <input type="number" id="Amount"> -->
+    <input type="date" name="" id="DataDeparture"  >
+    <input type="date" name="" id="DataArrival"  >
+    <p id=AmountTitle>Количество <br> людей</p>
+    <p id=OneWayTitle>Туда</p>
+    <p id=RoundTripTitle>Обратно</p>
+    <!-- <input type="radio" id="OneWayButton" value="В одну сторону">
+    <input type="radio" name="" id="Round-tripButton">
+    <span id="OneWayTitle">В одну сторону</span>
+    <span id="Round-tripTitle">Туда-обратно</span> -->
+    <div class="PeopleAmount">        
+        <button class="bt_minus">-</button>
+        <input type="text" class="quantity" value="1" data-max-count="8">
+        <button class="bt_plus">+</button>
+    </div>
+    <div class="card-grid">
+        <input name="plan" class="card-radio1" type="radio" />
+        <span class="plan-type1">В одну сторону</span>
+        <input name="plan" class="card-radio2" type="radio" />
+        <span class="plan-type2">Туда-обратно</span> 
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="bottompanel">
+        
+        <span>PENKOFF</span>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>// Убавляем кол-во по клику
+        $('.PeopleAmount .bt_minus').click(function() {
+        let $input = $(this).parent().find('.quantity');
+        let count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+    });
+    // Прибавляем кол-во по клику
+    $('.PeopleAmount .bt_plus').click(function() {
+        let $input = $(this).parent().find('.quantity');
+        let count = parseInt($input.val()) + 1;
+        count = count > parseInt($input.data('max-count')) ? parseInt($input.data('max-count')) : count;
+        $input.val(parseInt(count));
+    }); 
+    // Убираем все лишнее и невозможное при изменении поля
+    $('.PeopleAmount .quantity').bind("change keyup input click", function() {
+        if (this.value.match(/[^0-9]/g)) {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        }
+        if (this.value == "") {
+            this.value = 1;
+        }
+        if (this.value > parseInt($(this).data('max-count'))) {
+            this.value = parseInt($(this).data('max-count'));
+        }    
+    });    </script>
+</html>
