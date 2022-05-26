@@ -661,26 +661,16 @@ top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    background: url(images/SkyBG.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     transition: 1s;
     transform: translateX(100%);
 }
 
 .autorizationPannel_Active{
     transform: translateX(0%);
-}
-
-.autorizationPannelParameters{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-    flex-direction: column;
-}
-
-.autorizationPannelParameters a{
-    text-decoration: none;
-    font-weight: 400;
 }
 
 .autorizationPannel #Login{
@@ -705,5 +695,26 @@ top: 10px;
 .autorizationPannel #Login:hover::after{
     width: 100%;
 }
+
+.autorizationPannelParameters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+}
+
+.autorizationPannelParameters a{
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.autorizationPannelParameters #InputLogin{
+    
+}
+
+
+
+
 
 
