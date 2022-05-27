@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="topCIties.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="toppanel">
+            <span id="Logo">GoFly</span>
+            <a href="#" id="Favorites">Избранное</a>
+            <a href="#" id="History">История путешествий</a>
+            <a href="#" id="Registration">Зарегестрироваться</a>
+        </div>
+
+        <div class="autorizationPannel">
+            <a href="#" class="LoginMenu_btn" id="Login">Войти</a>
+            <nav class="autorizationPannelParameters">
+                <p id="autorizationTitle">Авторизация</p>
+                <input id="InputLogin" type="text" placeholder="Введите логин сюда">
+                <input id="InputPassword" type="password" placeholder="Введите пароль сюда">
+                <button id = "EnterButton">Вход</button>
+                <div class="autorizationInfo">
+                    <p>Забыли пароль?</p>
+                    <a id="AutorizationPress" href="#">Нажмите</a>
+                    <p>для восстановления <br> Нет аккаунта?</p>
+                    <a id="AutorizationRecover"href="#">Зарегистрируйтесь</a>
+                </div>
+            </nav>
+        </div>
+
+            <table>
+                <tr>
+                    <th>Город</th>
+                    <th>Страна</th>
+                    <th>Изображение</th>
+                    <th>Доступность</th>
+                    <th>Итог</th>
+                </tr>
+                <tr>
+                    <td>Москва</td>
+                    <td>Россия</td>
+                    <!-- <td><img src="images/HeartEmpty.png" style="max-width:10%; max-height:10%" alt=""></td> -->
+                    <td><img src="/images/Mocow.png" alt=""></td>
+                    <td>6.4</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Токио</td>
+                    <td>Япония</td>
+                    <td>Изображение</td>
+                    <td>7.2</td>
+                    <td>7.7</td>
+                </tr>
+                <tr>
+                    <td>Вашингтон</td>
+                    <td>США</td>
+                    <td>Изображение</td>
+                    <td>7.0</td>
+                    <td>7.3</td>
+                </tr>
+                <tr>
+                    <td>Лондон</td>
+                    <td>Британия</td>
+                    <td>Изображение</td>
+                    <td>6.8</td>
+                    <td>7.1</td>
+                </tr>
+            </table>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+$('.LoginMenu_btn').on('click',function(e){
+    e.preventDefault();
+    $('.autorizationPannel').toggleClass('autorizationPannel_Active')
+})
+</script>
+
+</html>
