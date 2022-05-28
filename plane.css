@@ -81,7 +81,7 @@ body{
 
 }
 
-.toppanel a::after{
+.toppanel #Favorites::after{
     content: "";
     display: block;
     height: 3px;
@@ -89,13 +89,64 @@ body{
     background-color: white;
     transition: width 0.4s ease-in-out;
 }
+.toppanel #Favorites:hover::after{
+    width: 100%;
+}
+.toppanel #History::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+.toppanel #History:hover::after{
+    width: 100%;
+}
+.toppanel #Registration::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+.toppanel #Registration:hover::after{
+    width: 100%;
+}
+.toppanel #Feedback::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+.toppanel #Feedback:hover::after{
+    width: 100%;
+}
+.toppanel #Feedback{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    margin-right: 60%;
+}
 
-.toppanel a:hover::after{
+.toppanel #Login::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+.toppanel #Login:hover::after{
     width: 100%;
 }
 
+
 .toppanel #Logo{
-    margin-left: 2%;
+    margin-left: 0%;
     font-family: Magneto;
     font-size: 50px;
     color: rgb(36, 93, 250);
@@ -675,8 +726,9 @@ top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: blueviolet; */
-    background: url(images/SkyBG.jpg);
+    background-color: blueviolet;
+    background: url(images/SkyBackPlane.jpg);
+    /* background: url(images/HZ.jpg); */
     background-size: 100%;
     background-repeat: no-repeat;
     transition: 1s;
@@ -763,5 +815,7 @@ top: 10px;
     position: absolute;
     top:350px;
     font-size: 26px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: #ffffff;
 }
 

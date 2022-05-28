@@ -48,20 +48,18 @@ body,html{
 
 
 body{
-   /* background: url(images/TrainBack.jpg); */
+   background: url(images/TopCitiesBack.jpg);
    background-size: 100%;
    background-color: aquamarine;
-   
+
 }
 
 .container{
     position: relative;
     width: 100%;
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
-
-
 /* Верхняя плашка */
 
 .toppanel{
@@ -82,7 +80,7 @@ body{
 
 }
 
-.toppanel a::after{
+.toppanel #Favorites::after{
     content: "";
     display: block;
     height: 3px;
@@ -90,13 +88,64 @@ body{
     background-color: white;
     transition: width 0.4s ease-in-out;
 }
+.toppanel #Favorites:hover::after{
+    width: 100%;
+}
+.toppanel #History::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+.toppanel #History:hover::after{
+    width: 100%;
+}
+.toppanel #Registration::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+.toppanel #Registration:hover::after{
+    width: 100%;
+}
+.toppanel #Feedback::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+.toppanel #Feedback:hover::after{
+    width: 100%;
+}
+.toppanel #Feedback{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    margin-right: 60%;
+}
 
-.toppanel a:hover::after{
+.toppanel #Login::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+.toppanel #Login:hover::after{
     width: 100%;
 }
 
+
 .toppanel #Logo{
-    margin-left: 2%;
+    margin-left: 0%;
     font-family: Magneto;
     font-size: 50px;
     color: rgb(36, 93, 250);
@@ -145,17 +194,19 @@ body{
     justify-content: center;
     align-items: center;
     /* background-color: blueviolet; */
-    background: url(images/SkyBG.jpg);
+    background: url(images/TopCitiesBacKAutorization.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     transition: 1s;
     transform: translateX(100%);
     font-family: Bebas Neue;
+    z-index: 1;
 }
 
 .autorizationPannel_Active{
     transform: translateX(0%);
     border-radius:25px 0px 0px 25px;
+    z-index : 1;
 }
 
 .autorizationPannel #Login{
@@ -166,6 +217,8 @@ body{
     font-family: Bebas Neue;
     font-size: 25px;
     text-decoration: none;
+    overflow: hidden;
+
 }
 
 .autorizationPannel #Login::after{
@@ -232,10 +285,23 @@ body{
     position: absolute;
     top:350px;
     font-size: 26px;
+    text-shadow: 1px 0px 0px rgb(255, 255, 255);
+    
 }
 
 
 /* Рейтинг городов */
+
+/* .table{
+    position: absolute;
+    box-sizing: border-box;
+    top: 200px;
+    left: 200px;
+    width: 1210px;
+    border: 1px solid black;
+    height: 100%;
+
+} */
 
 table{
     overflow: scroll;
@@ -257,7 +323,7 @@ table{
 }
 
 table img{
-    width: 100%;
+    /* width: 100%; */
     padding: auto;
     display: block;
 }
@@ -274,3 +340,50 @@ td{
     height: 135px;
     border-collapse: collapse;
 }
+
+/* Окно с информацией о городах */
+
+#info1 {
+    width: 300px;
+    height: 500px;
+text-align: center;
+padding: 15px;
+border: 3px solid #0000cc;
+border-radius: 10px;
+color: #0000cc;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+background: #fff;
+}
+
+#info1 a{
+    position: absolute;
+    bottom: 0%;
+}
+#zatemnenie {
+background: rgba(102, 102, 102, 0.5);
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+}
+
+#zatemnenie:target {display: block;}
+.close {
+display: inline-block;
+border: 1px solid #0000cc;
+color: #0000cc;
+padding: 0 12px;
+margin: 10px;
+text-decoration: none;
+background: #f2f2f2;
+font-size: 14pt;
+cursor:pointer;
+}
+.close:hover {background: #e6e6ff;}

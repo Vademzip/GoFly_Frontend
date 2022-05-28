@@ -83,7 +83,7 @@ body{
 
 }
 
-.toppanel a::after{
+.toppanel #Favorites::after{
     content: "";
     display: block;
     height: 3px;
@@ -91,13 +91,45 @@ body{
     background-color: white;
     transition: width 0.4s ease-in-out;
 }
-
-.toppanel a:hover::after{
+.toppanel #Favorites:hover::after{
+    width: 100%;
+}
+.toppanel #History::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+.toppanel #History:hover::after{
+    width: 100%;
+}
+.toppanel #Registration::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+.toppanel #Registration:hover::after{
+    width: 100%;
+}
+.toppanel #Login::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+.toppanel #Login:hover::after{
     width: 100%;
 }
 
 .toppanel #Logo{
-    margin-left: 2%;
+    margin-left: 0%;
     font-family: Magneto;
     font-size: 50px;
     color: rgb(36, 93, 250);
@@ -106,9 +138,26 @@ body{
 
 .toppanel #Login{
     color: rgb(255, 255, 255);
-    position: absolute;
+    position:fixed;
     right: 0;
     margin-right: 2%;
+}
+.toppanel #Feedback::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+.toppanel #Feedback:hover::after{
+    width: 100%;
+}
+.toppanel #Feedback{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    margin-right: 60%;
 }
 
 
@@ -118,6 +167,7 @@ body{
         position: absolute;
     right: 0%;
     margin-right: 8%;
+
 }
 
 .toppanel #History{
@@ -389,14 +439,14 @@ body{
     top: 50px;
     left: 10px;
     height: 50px;
-    width: 240px;
+    width: 480px;
     border: 0px 0px 0px 0px;
     border-color: black;
     border-width: 1px 1px 1px 0.5px;
     /* border-radius: 10% 0% 0% 10%; */
 }
 
-.searchPannel #Arrival{
+/* .searchPannel #Arrival{
     position: absolute;
     top: 50px;
     left: 250px;
@@ -405,8 +455,8 @@ body{
     opacity: 100%;
     border-color: black black black black;
     border-width: 1px 0.5px 1px 0.5px;
-    /* border-color: black; */
-}
+    /* border-color: black; }*/
+ 
 
 .searchPannel #DataDeparture{
     position: absolute;
@@ -518,13 +568,57 @@ body{
 }
 
 
-/* .card-grid{
-position: absolute;
-left: 25px;
-top: 10px;
+.CheckBoxes input,
+.CheckBoxes label{
+position:absolute;
 }
 
-.card-grid #card-radio1Label,
+.CheckBoxes #CheckBox5Star{
+    left: 280px;
+    top: 12px;
+    width: 18px;
+    height: 18px;
+    color: #fff;
+}
+.CheckBoxes #CheckBox4Star{
+    left: 225px;
+    top: 12px;
+    width: 18px;
+    height: 18px;
+}
+.CheckBoxes #CheckBox3Star{
+    left: 170px;
+    top: 12px;
+    width: 18px;
+    height: 18px;
+}
+.CheckBoxes #CheckBoxLabel4,
+.CheckBoxes #CheckBoxLabel3,
+.CheckBoxes #CheckBoxLabel5,
+.CheckBoxes #HotelStarTitle{
+    position:absolute;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+.CheckBoxes #HotelStarTitle{
+    top: 10px;
+    left: 20px;
+}
+.CheckBoxes #CheckBoxLabel3{
+    top: 7px;
+    left: 140px;
+}
+.CheckBoxes #CheckBoxLabel4{
+    top: 7px;
+    left: 195px;
+}
+.CheckBoxes #CheckBoxLabel5{
+    top: 7px;
+    left: 250px;
+}
+
+
+/* .card-grid #card-radio1Label,
 .card-grid #card-radio2Label
 {
     color: white;
@@ -550,8 +644,8 @@ top: 10px;
 
 .card-grid #card-radio2Label{
     left: 160px;
-}
- */
+} */
+
 
 
 .searchPannel #OneWayTitle,
@@ -646,6 +740,13 @@ top: 10px;
     position: absolute;
 }
 
+/* .searchPannel #CheckBox5Star{
+    left: -17 px;
+    top: 7px;
+    position: absolute;
+} */
+
+
 
 /* Нижняя плашка */
 
@@ -656,7 +757,7 @@ top: 10px;
     width: 100%;
     height: 7%;
     /* background-color: black; */
-        }
+ }
 
 .bottompanel span{
     color:  #176FFA;
@@ -687,7 +788,7 @@ top: 10px;
     justify-content: center;
     align-items: center;
     /* background-color: blueviolet; */
-    background: url(images/SkyBG.jpg);
+    background: url(images/HotelsBackAutorization.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     transition: 1s;
@@ -774,6 +875,8 @@ top: 10px;
     position: absolute;
     top:350px;
     font-size: 26px;
+    color: #fff;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
 }
 
 

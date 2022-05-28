@@ -10,12 +10,13 @@
 </head>
 <body>
    <div class="container">
-        <div class="toppanel">
-            <span id="Logo">GoFly</span>
-            <a href="#" id="Favorites">Избранное</a>
-            <a href="#" id="History">История путешествий</a>
-            <a href="#" id="Registration">Зарегистрироваться</a>
-        </div>
+    <div class="toppanel">
+        <a href="plane.html"><span id="Logo">GoFly</span></a>
+        <a href="favourite.html" id="Favorites">Избранное</a>
+        <a href="history.html" id="History">История путешествий</a>
+        <a href="#" id="Registration">Зарегистрироваться</a>
+        <a href="feedback.html" id="Feedback">Отзывы</a>
+    </div>
 
         <div class="buttons">
 
@@ -47,15 +48,13 @@
             </div>
 
             <div class="hotels">
-                <a href="#">
                 <div class="imgBorder">
                     <img src="images/hotel.png" alt="">
                 </div>
                     <p>Отели</p>
-                </a>
             </div>
             <div class="topCities">
-                <a href="#">
+                <a href="topCities.html">
                 <div class="imgBorder">
                     <img src="images/topCities.png" alt="">
                 </div>
@@ -63,7 +62,7 @@
                 </a>
             </div>
             <div class="topHotels">
-                <a href="#">
+                <a href="topHotels.html">
                 <div class="imgBorder">
                     <img src="images/hotel (2).png" alt="">
                 </div>
@@ -74,8 +73,8 @@
         </div>
 
     <div class="searchPannel">
-        <input type="search" name="Departure" id="Departure" placeholder="Откуда" list="">
-        <input type="search" name="Arrival" id="Arrival" placeholder="Куда">
+        <input type="search" name="Departure" id="Departure" placeholder="Страна, город, (название отеля)" list="">
+        <!-- <input type="search" name="Arrival" id="Arrival" placeholder="Куда"> -->
         <input type="date" name="" id="DataDeparture"  >
         <p id=OneWayTitle>Заезд</p>
         <input type="date" name="" id="DataArrival"  >
@@ -87,21 +86,31 @@
         </div>
         <p id=AmountTitle>Количество <br> людей</p>
 
-        <!-- <div class="card-grid">
-            <input checked name="plan" id="card-radio1" class="card-radio1" type="radio" />
-            <label for="card-radio1" id="card-radio1Label">В одну сторону</label>
-            <input name="plan" id="card-radio2" class="card-radio2" type="radio" />
-            <label for="card-radio2" id="card-radio2Label">Туда-обратно</label>
-        </div> -->
+
+
+
+
+
+
+
+
+       <div class="CheckBoxes">
+        <input type="checkbox" name="" id="CheckBox5Star"  >
+        <label id="CheckBoxLabel5" for="CheckBox5Star">5★</label>
+        <input type="checkbox" name="" id="CheckBox4Star"  >
+        <label id="CheckBoxLabel4" for="CheckBox4Star">4★</label>
+        <input type="checkbox" name="" id="CheckBox3Star"  >
+        <label id="CheckBoxLabel3" for="CheckBox3Star">3★</label>
+        <p id=HotelStarTitle>Искать отели с</p>
+        </div>
 
         <div class="searchButton">
-            <a href="#" class="btn-1">Найти билеты</a>
+            <a href="#" class="btn-1">Найти отель</a>
         </div>
 
         <div class="wishlist">
             <img id="wishlistImg" src="images/heart_full.png" alt="">
         </div>
-
     </div>
 
         <div class="bottompanel">
