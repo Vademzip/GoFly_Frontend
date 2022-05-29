@@ -55,6 +55,10 @@ body{
    
 }
 
+/* input{
+    padding: 0px 10px;
+} */
+
 .container{
     position: relative;
     width: 100%;
@@ -409,6 +413,11 @@ body{
     border-width: 1px 0.5px 1px 0.5px;
 }
 
+.searchPannel #Departure,
+.searchPannel #Arrival{
+    padding: 0px 10px;
+}
+
 .searchPannel #DataDeparture{
     position: absolute;
     top: 50px;
@@ -670,6 +679,10 @@ top: 10px;
     top: 1px;
     position: absolute;
     letter-spacing: 2.5px;
+}
+
+.autorizationPannel input{
+    padding: 0px 20px;
 }
 
 .autorizationPannel{
