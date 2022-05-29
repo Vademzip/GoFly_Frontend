@@ -287,118 +287,67 @@ body{
     font-size: 26px;
 }
 
-
-/* Рейтинг городов */
-
-/* .table{
-    position: absolute;
+.searchPannel{
+    position : absolute;
     box-sizing: border-box;
-    top: 200px;
-    left: 200px;
-    width: 1210px;
-    border: 1px solid black;
-    height: 100%;
-
-} */
-
-table{
-    overflow: scroll;
-    position: absolute;
-    box-sizing: border-box;
-    top: 200px;
-    left: 200px;
-    border: 1px solid;
-    width: 1110px;
-    height: 100%;
+    border: 1cm;
+    border: solid;
+    top:100px;
+    left:550px;
+    height: 600px;
+    width: 500px;
+    background-color: rgba(148, 135, 62, 0.207);
     border-radius: 25px;
-    /* background-color: white; */
     font-family: Bebas Neue;
-    text-align: center;
-    /* border-collapse: separate; */
-    border-spacing: 5px;
-    background-color: orange;
-    border: 16px solid orange;
+    font-size: 20px;    
 }
-
-table img{
-    /* width: 100%; */
-    padding: auto;
-    display: block;
-}
-
-th{
-    font-size: 18px;
-    text-align: center;
-}
-
-td{
-    /* background-color: orangered; */
-    border: 1px solid black;
-    width: 205px;
-    height: 135px;
-    border-collapse: collapse;
-}
-
-/* Окно с информацией о городах */
-
-#reviewAdding{
+.searchPannel #RegistrationTitle{
     position: absolute;
-    top: 200px;
-    left: 676.5px;
-    font-size: 26px;
+    left: 150px;
+    font-size: 50px;  
+    top: 20px;
     color: white;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
 }
-
-.reviewInfo{
+.searchPannel #LoginReg,
+.searchPannel #PasswordReg,
+.searchPannel #PasswordAcception,
+.searchPannel #Email{
     position: absolute;
-    top: 240px;
-    left: 678.5px;
-    width: 200px;
-    padding-bottom: 10px;
-    
 }
-
-/* .reviewInfo input{
-    box-sizing: border-box;
-    border: none;
-     background: transparent; 
-    color : rgb(255, 255, 255);
-   border-bottom: 3px solid #ccc;
-    padding: 15px 0 10px;
-    outline: rgb(255, 255, 255);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 100%;
-    font-size: 20px;
-} */    
-
-.reviewInfo #nameAuthor{
-    position: absolute;
+.searchPannel #LoginReg{
+    left: 45px;
+    top: 150px;
     width: 400px;
-    left: -126.5px;
 }
-
-.reviewInfo #textAuthor{
-    position: absolute;
-    top:25px;
-    left: -126.5px;
+.searchPannel #Email{
+    left: 45px;
+    top: 150px;
     width: 400px;
-    height: 150px;
-    /* box-sizing: border-box;
-    border: none;
-     background: transparent; 
-    color : rgb(255, 255, 255);
-   border-bottom: 3px solid #ccc;
-    padding: 15px 0 10px;
-    outline: rgb(255, 255, 255);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;     */
+    height: 30px;
+    font-size: 23px;
 }
-
-.searchButton{
-    height: 100%;
-    display: flex;
+.searchPannel #LoginReg{
+    left: 45px;
+    top: 225px;
+    width: 400px;
+    height: 30px;
+    font-size: 23px;
 }
-
+.searchPannel #PasswordReg{
+    left: 45px;
+    top: 300px;
+    width: 400px;
+    height: 30px;
+    font-size: 23px;
+}
+.searchPannel #PasswordAcception{
+    left: 45px;
+    top: 375px;
+    width: 400px;
+    height: 30px;
+    font-size: 23px;
+}
 .searchButton .btn-1{
     text-decoration: none;
     display: flex;
@@ -411,26 +360,25 @@ td{
     border-radius: 30px;
     overflow: hidden;   
     color:#fff;
-    box-shadow: 0 0 0 0 rgba(248, 64, 227, 0.842), 0 0 0 0 rgba(244, 39, 255, 0.766);
+    box-shadow: 0 0 0 0 rgba(111, 255, 49, 0.585), 0 0 0 0 rgba(50, 255, 39, 0.5);
     transition: tranform 0.3s ease, box-shadow 1s ease;
+    left: 0px;
     height: 50px;
-    top: 200px;
+    top: 500px;
     align-items: center;
     justify-content: center;
 
 }
-
-
   
 .searchButton .btn-1::after{
     content: "";
-    width: 400px;
-    height: 400px;
+    width: 800px;
+    height: 900px;
     position: absolute;
-    top: -50px;
-    left: -100px;
+    top: -300px;
+    left: -160px;
     background-color: #ff3cac;
-    background-image: linear-gradient(225deg, #ec96ce 0%, #9c276f 50%, #da65b5 100%);
+    background-image: linear-gradient(225deg, #ffffffc8 0%, #e5f742c2 50%, #ffffffc4 100%);
     z-index: -1;
     transition: 8s ease;
     
@@ -438,10 +386,35 @@ td{
 
 .searchButton .btn-1:hover{
     transform: translate(0, -1px);
-    box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5), -10px 10px 25px 0 rgba(39, 200,255, 0.5);
+    box-shadow: 10px -10px 25px 0 rgba(253, 240, 61, 0.856), -10px 10px 25px 0 rgba(222, 252, 56, 0.862);
     
 }
 
 .searchButton .btn-1:hover::after{
     transform: rotate(150deg);
+}
+.searchPannel #CheckBoxAcception{
+    position: absolute;
+    left: 50px;
+    top: 450px;
+    width: 18px;
+    height: 18px;
+    color: #fff;
+}
+.searchPannel #Confidence{
+    position: absolute;
+    left: 75px;
+    font-size: 20px;  
+    top: 447px;
+    color: white;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+}
+
+.searchPannel #ConfidenceLink{
+    position: absolute;
+    left: 180px;
+    font-size: 20px;  
+    top: 447px;
+    color: rgb(125, 155, 253);
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
 }

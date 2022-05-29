@@ -35,6 +35,7 @@
     margin: 0;
     padding: 0;
     outline: none;
+
 }
 
 a{
@@ -48,17 +49,17 @@ body,html{
 
 
 body{
-   background: url(images/TopCitiesBack.jpg);
+   background: url(images/VadyaLoh.jpg);
    background-size: 100%;
-   background-color: aquamarine;
-
+   background-color: orange;
+   background-repeat: no-repeat;
 }
 
 .container{
     position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 /* Верхняя плашка */
 
@@ -194,7 +195,7 @@ body{
     justify-content: center;
     align-items: center;
     /* background-color: blueviolet; */
-    background: url(images/TopCitiesBacKAutorization.jpg);
+    background: url(images/SkyBG.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     transition: 1s;
@@ -285,7 +286,7 @@ body{
     position: absolute;
     top:350px;
     font-size: 26px;
-    text-shadow: 1px 0px 0px rgb(255, 255, 255);
+    /* text-shadow: 1px 0px 0px rgb(255, 255, 255); */
     
 }
 
@@ -329,7 +330,7 @@ table img{
 }
 
 th{
-    font-size: 18px;
+    font-size: 26px;
     text-align: center;
 }
 
@@ -339,6 +340,8 @@ td{
     width: 205px;
     height: 135px;
     border-collapse: collapse;
+    font-size: 26px;
+
 }
 
 /* Окно с информацией о городах */
@@ -358,6 +361,7 @@ bottom: 0;
 left: 0;
 margin: auto;
 background: #fff;
+
 }
 
 #info1 a{

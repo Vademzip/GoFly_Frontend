@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="registration.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoFly - поиск дешёвых билетов
@@ -34,16 +34,20 @@
             </nav>
         </div>
 
-        <span id="reviewAdding">Добавить отзыв</span>
-        <div class="reviewInfo">
-            <input type="text" name="nameAuthor" id="nameAuthor" placeholder="Ваше имя"> 
-            <textarea name="textAuthor" id="textAuthor"  placeholder="Ваш отзыв"></textarea>
-            <div class="searchButton">
-                <a href="#" class="btn-1">Найти билеты</a>
-            </div>
-        </div>
-
 </body>
+<div class="searchPannel">
+    <input type="textbox" name="LoginReg" id="LoginReg" placeholder="Введите логин" list="">
+    <input type="password" name="PasswordReg" id="PasswordReg" placeholder="Введите пароль" list="">
+    <input type="password" name="PasswordAcception" id="PasswordAcception" placeholder="Подтвердите пароль" list="">
+    <input type="textbox" name="Email" id="Email" placeholder="Введите почту" list="">
+    <p id="RegistrationTitle">Регистрация</p>
+    <div class="searchButton">
+        <a href="#" class="btn-1">Зарегистрироваться</a>
+    </div>
+    <input type="checkbox" name="" id="CheckBoxAcception"  >
+    <p id="Confidence">Я согласен(а) с</p>
+    <a href="confidence.html" id="ConfidenceLink">Политикой конфиденциальности</a>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script>
@@ -52,4 +56,5 @@ $('.LoginMenu_btn').on('click',function(e){
     $('.autorizationPannel').toggleClass('autorizationPannel_Active')
 })
 </script>
+
 </html>

@@ -239,7 +239,8 @@ body{
     height: 100%; 
     max-width: 100%;
     max-height: 100%;
-
+    opacity: 60%;
+    left: 120px;
 }
 
 .planes img{
@@ -247,10 +248,6 @@ body{
     max-height: 100%;
     /* line-height: 228px; */
     position : static;
-}
-
-.planes .imgBorder{
-    opacity: 60%;
 }
 
 .planes p{
@@ -263,8 +260,7 @@ body{
     width: 150px;
     max-width: 50%;
     max-height: 50%;
-    margin-left: 17%;
-    
+    margin-left: 26.5%;
     
 }
 
@@ -282,8 +278,6 @@ body{
     position: relative;
     max-width: 50%;
     max-height: 50%;
-    /* line-height: 228px; */
-    
     box-sizing: border-box;
         }
 
@@ -297,15 +291,12 @@ body{
     width: 150px;
     max-width: 100%;
     max-height: 100%;
-    margin-left: 34%;
+    margin-left: 44%;
 }
 
 .buses img {
     max-width: 50%;
     max-height: 50%;
-    /* line-height: 228px; */
-    
-    
 }
 
 .buses .imgBorder{
@@ -331,14 +322,12 @@ body{
     width: 150px;
     max-width: 100%;
     max-height: 100%;
-    margin-left: 52%;
+    margin-left: 62%;
 }
 
 .hotels img{
     max-width: 50%;
     max-height: 50%;
-    /* line-height: 228px; */
-    
 }
 
 .hotels .imgBorder{
@@ -354,51 +343,17 @@ body{
 .hotels p{
     text-align: center;
 }
-
-.topHotels{
-    position: absolute;
-    display: block;
-    width: 150px;
-    max-width: 50%;
-    max-height: 50%;
-    margin-left: 87%;
-}
-
-.topHotels img{
-    max-width: 50%;
-    max-height: 50%;
-    /* line-height: 228px; */
-    
-}
-
-.topHotels .imgBorder{
-    opacity: 60%;
-}
-
-.topHotels .imgBorder:hover{
-    opacity: 100%;
-    cursor: pointer;
-    background-color: #005d5d;
-}
-
-.topHotels p{
-    text-align: center;
-}
-
 .topCities{
     position: absolute;
     display: block;
     width: 150px;
     max-width: 50%;
     max-height: 50%;
-    margin-left: 70%;
+    margin-left: 80%;
 }
-
 .topCities img{
     max-width: 50%;
     max-height: 50%;
-    /* line-height: 228px; */
-    
 }
 
 .topCities .imgBorder{
@@ -692,6 +647,12 @@ top: 10px;
     left: 1042px;
     box-sizing: border-box;
     position: absolute;
+    transition: 0.1s;
+}
+
+.searchPannel #wishlistImg:active{
+    max-width: 20%;
+    max-height: 20%;
 }
 
 
@@ -736,7 +697,7 @@ top: 10px;
     align-items: center;
     /* background-color: blueviolet; */
     /* background: url(images/TrainBackAutorization.jpg); */
-    background: url(images/TrainBackAutorization.jpg);
+    background: url(images/SkyBG.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     transition: 1s;
@@ -826,7 +787,6 @@ top: 10px;
     top:350px;
     font-size: 26px;
     color: rgb(0, 0, 0);
-    text-shadow: 1px 1px 0px rgb(178, 236, 196);
 }
 
 
