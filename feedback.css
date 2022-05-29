@@ -58,7 +58,7 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: scroll;
 }
 /* Верхняя плашка */
 
@@ -301,43 +301,6 @@ body{
 
 } */
 
-table{
-    overflow: scroll;
-    position: absolute;
-    box-sizing: border-box;
-    top: 200px;
-    left: 200px;
-    border: 1px solid;
-    width: 1110px;
-    height: 100%;
-    border-radius: 25px;
-    /* background-color: white; */
-    font-family: Bebas Neue;
-    text-align: center;
-    /* border-collapse: separate; */
-    border-spacing: 5px;
-    background-color: orange;
-    border: 16px solid orange;
-}
-
-table img{
-    /* width: 100%; */
-    padding: auto;
-    display: block;
-}
-
-th{
-    font-size: 18px;
-    text-align: center;
-}
-
-td{
-    /* background-color: orangered; */
-    border: 1px solid black;
-    width: 205px;
-    height: 135px;
-    border-collapse: collapse;
-}
 
 /* Окно с информацией о городах */
 
@@ -347,15 +310,16 @@ td{
     border-radius: 25px;
     box-sizing: border-box;
     top: 100px;
-    left: 678.5px;
+    left: 521.5px;
     width: 500px;
-    height: 400px;
+    height: 300px;
     background-color: rgba(148, 110, 53, 0.342)
 }
 
 
 
 #reviewAdding{
+    top: 20px;
     left: 175px;
     position: absolute;
     /* top: 200px; */
@@ -382,22 +346,16 @@ td{
     resize: none;
 }
 
-.reviewInfo #nameAuthor{
-    position: absolute;
-    width: 400px;
-    height: 24px;
-    left: 25px;
-    /* left: -126.5px; */
-    border-radius: 25px;
-}
+
 
 .reviewInfo #textAuthor{
     position: absolute;
-    top:50px;
+    top:-10px;
     left: 25px;
     width: 400px;
     height: 150px;
     border-radius: 25px;
+    background: rgba(255, 255, 255, 0.9);
     /* box-sizing: border-box;
     border: none;
      background: transparent; 
@@ -431,7 +389,7 @@ td{
     box-shadow: 0 0 0 0 rgba(248, 64, 227, 0.842), 0 0 0 0 rgba(244, 39, 255, 0.766);
     transition: tranform 0.3s ease, box-shadow 1s ease;
     height: 50px;
-    top: 235px;
+    top: 170px;
     align-items: center;
     justify-content: center;
 
@@ -446,8 +404,8 @@ td{
     position: absolute;
     top: -50px;
     left: -100px;
-    background-color: #ff3cac;
-    background-image: linear-gradient(225deg, #ec96ce 0%, #9c276f 50%, #da65b5 100%);
+    background-color: #ff3cac;  
+    background-image: linear-gradient(225deg, #1b6229 0%, #4b260b 50%, #ff00ae 100%);
     z-index: -1;
     transition: 8s ease;
     
@@ -455,10 +413,53 @@ td{
 
 .searchButton .btn-1:hover{
     transform: translate(0, -1px);
-    box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5), -10px 10px 25px 0 rgba(39, 200,255, 0.5);
+    box-shadow: 10px -10px 25px 0 rgba(150, 105, 8, 0.5), -10px 10px 25px 0 rgba(255, 255, 255, 0.5);
     
 }
 
 .searchButton .btn-1:hover::after{
     transform: rotate(150deg);
+}
+
+.title{
+    position: absolute;
+    box-sizing: border-box;
+    color: white;
+    top: 423px;
+    left: 700px;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    background-color: black;
+    border-radius: 25px;
+    border: 10px black solid;
+}
+
+.FeedbackContainer{
+    padding-bottom: 15px;
+}
+
+.name{
+    font-weight: 800;
+}
+
+.text{
+    padding-left: 20px;
+
+}
+
+.allFeedbacks{
+    font-family: Bebas Neue;
+    position: absolute;
+    box-sizing: border-box;
+    top: 490px;
+    left: 267px;
+    color: rgb(0, 0, 0);
+    width: 1000px;
+    border: 1px white solid;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
